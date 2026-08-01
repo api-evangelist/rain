@@ -1,0 +1,28 @@
+generated: '2026-07-20'
+method: searched
+status: published
+source: https://docs.rain.xyz/.well-known/oauth-authorization-server
+notes: >-
+  Rain's documentation portal (docs.rain.xyz, GitBook-hosted) publishes a hosted,
+  remote MCP server for searching the Rain API documentation. It is OAuth-protected
+  (RFC 8414 authorization-server + RFC 9728 protected-resource metadata discovered
+  at docs.rain.xyz/.well-known/). This is a docs-search MCP surface, not a full
+  Rain payments-API MCP server (the payments API docs themselves are gated behind
+  an access code, so no operation-level MCP tools could be derived).
+server:
+  name: rain-docs
+  transport: http
+  url: https://docs.rain.xyz/mcp
+  auth:
+    type: oauth2
+    issuer: https://docs.rain.xyz/mcp/oauth
+    authorization_endpoint: https://docs.rain.xyz/mcp/oauth/authorize
+    token_endpoint: https://docs.rain.xyz/mcp/oauth/token
+    registration_endpoint: https://docs.rain.xyz/mcp/oauth/register
+    grant_types: [authorization_code, client_credentials, refresh_token]
+    pkce: [S256]
+    scopes: [mcp:search]
+tools:
+- name: search
+  description: Search the Rain API documentation (GitBook docs-search MCP).
+  scope: mcp:search

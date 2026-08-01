@@ -1,0 +1,36 @@
+generated: '2026-07-20'
+method: searched
+source: live probes of /.well-known/ on Rain hosts
+notes: >-
+  rain.xyz marketing and docs hosts were probed. The production/marketing host
+  (www.rain.xyz) publishes no /.well-known/ discovery documents. The documentation
+  host (docs.rain.xyz, a GitBook-hosted portal) exposes OAuth authorization-server
+  and protected-resource metadata that front a hosted MCP server for searching the
+  Rain documentation (issuer https://docs.rain.xyz/mcp/oauth, scope mcp:search).
+hosts:
+- host: https://www.rain.xyz
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+- host: https://docs.rain.xyz
+  documents:
+  - path: /.well-known/oauth-authorization-server
+    status: 200
+    file: rain-oauth-authorization-server.json
+  - path: /.well-known/oauth-protected-resource
+    status: 200
+    file: rain-oauth-protected-resource.json
+  - path: /.well-known/security.txt
+    status: 307
+  - path: /.well-known/openid-configuration
+    status: 307
+  - path: /.well-known/api-catalog
+    status: 404

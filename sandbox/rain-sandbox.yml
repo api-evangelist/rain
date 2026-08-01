@@ -1,0 +1,16 @@
+generated: '2026-07-20'
+method: searched
+source: https://www.rain.xyz; https://docs.rain.xyz
+notes: >-
+  Rain provides a sandbox / test environment for partners. Per Rain's developer
+  materials, on request Rain provisions a sandbox environment where engineers can
+  test end-to-end flows (card issuance, flow of funds, balances, controls,
+  webhooks) without touching real funds. Access is granted through onboarding /
+  compliance review; specific test card numbers, test tokens, and fixture values
+  are published only inside the access-code-gated developer docs and are therefore
+  not reproduced here (no fabrication).
+sandbox:
+  available: true
+  provisioning: on-request via onboarding
+  test_vs_live: separate sandbox environment; no live funds
+  published_test_values: none (gated)

@@ -1,0 +1,21 @@
+generated: '2026-07-20'
+method: searched
+source: https://docs.rain.xyz; https://www.rain.xyz/product/payments
+spec_type: Webhooks
+notes: >-
+  Rain documents webhooks as a core part of its developer platform: its onboarding
+  materials describe getting familiar with "API endpoints, authentication, and
+  webhook patterns," and the API delivers event and status notifications via
+  webhooks. The full webhook event catalog and payload schemas are behind the
+  access-code-gated developer docs (docs.rain.xyz), so an AsyncAPI document could
+  not be captured verbatim. This artifact records that a webhook event surface
+  genuinely exists; it does not fabricate the event list.
+webhooks:
+  advertised: true
+  delivery: HTTP callbacks
+  documented_at: https://docs.rain.xyz
+  catalog_status: gated
+  known_domains:
+  - card issuance and lifecycle events
+  - flow-of-funds / transaction events
+  - balance and account events

@@ -1,0 +1,21 @@
+generated: '2026-07-20'
+method: searched
+probe: false
+source: https://trust.rain.xyz
+url: https://trust.rain.xyz
+resources_url: https://trust.rain.xyz/resources
+certifications:
+- PCI DSS
+- SOC 2
+notes: >-
+  Rain operates a public Trust Center at trust.rain.xyz (JavaScript-rendered, so
+  the automated keyword probe did not trip). Certifications are corroborated by
+  Rain's own published resource pages announcing PCI DSS compliance and SOC 2
+  certification, plus ongoing smart-contract audits by Sherlock.
+evidence:
+- source: https://www.rain.xyz/resources/rain-achieves-pci-dss-compliance-reinforcing-commitment-to-secure-compliant-stablecoin-infrastructure
+  keywords: [pci dss]
+- source: https://www.rain.xyz/resources/securing-trust-rain-achieves-soc-2-compliance
+  keywords: [soc 2]
+- source: https://trust.rain.xyz/resources
+  keywords: [trust center]

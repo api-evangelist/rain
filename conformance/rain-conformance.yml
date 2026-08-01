@@ -1,0 +1,26 @@
+generated: '2026-07-20'
+method: searched
+source: >-
+  https://www.rain.xyz/resources/rain-achieves-pci-dss-compliance-reinforcing-commitment-to-secure-compliant-stablecoin-infrastructure;
+  https://www.rain.xyz/resources/securing-trust-rain-achieves-soc-2-compliance;
+  https://trust.rain.xyz
+notes: >-
+  Compliance posture is publicly announced by Rain. No public OpenAPI is available
+  for the payments API (developer docs are gated behind an access code), so
+  protocol-level conformance (oauth2/oidc/rfc9457/pagination) could not be derived.
+standards:
+- id: pci-dss
+  conforms: true
+  evidence: Rain publicly announced PCI DSS compliance (2025 press release + trust center).
+- id: soc2
+  conforms: true
+  evidence: Rain publicly announced SOC 2 certification (rain.xyz/resources + trust center).
+- id: visa-principal-member
+  conforms: true
+  evidence: Rain is a Visa Principal Member for card issuing.
+- id: mastercard-principal-member
+  conforms: true
+  evidence: Rain is a Mastercard Principal Member.
+- id: smart-contract-audit
+  conforms: true
+  evidence: Ongoing smart-contract audits by Sherlock (per PCI DSS announcement).

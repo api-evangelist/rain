@@ -1,9 +1,26 @@
 aid: rain
 name: Rain
-description: Rain is a company surfaced as a portfolio company of 500-global, iconiq-capital, lightspeed-venture-partners,
-  paradigm, prosus-ventures, qed-investors, sapphire-ventures and added to the API Evangelist network
-  as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Rain is an enterprise stablecoin payments platform that lets companies embed digital-dollar
+  money movement into their products through a single API. Its infrastructure spans stablecoin wallets
+  and virtual accounts, card issuing (Rain is a Visa and Mastercard Principal Member, settling Visa card
+  transactions daily in stablecoins across multiple blockchains), and money movement via fiat on-ramps,
+  off-ramps, and cross-border payment orchestration. Rain abstracts the back-end complexity of making
+  on-chain stablecoins interoperable with traditional card networks, and maintains PCI DSS and SOC 2
+  compliance. Customers include Western Union, Nuvei, and ether.fi. Rain has raised over $338M, including
+  a $250M Series C led by ICONIQ and a Series B led by Sapphire Ventures.
 url: https://raw.githubusercontent.com/api-evangelist/rain/refs/heads/main/apis.yml
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://cdn.prod.website-files.com/69af05389f32bed4dc0b35e0/6a556490090af8abcdcfcd24_rain-favicon-2026.png
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
@@ -18,9 +35,17 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
-- Company
+- Stablecoins
+- Payments
+- Card Issuing
+- Fintech
+- Cross-Border Payments
+- Crypto
+- Wallets
+- Money Movement
+- API
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -28,5 +53,50 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/rain-domain-security.yml
 - type: Website
-  url: https://rainlocal.com
+  url: https://www.rain.xyz
+- type: DeveloperPortal
+  url: https://docs.rain.xyz
+- type: Documentation
+  url: https://docs.rain.xyz
+- type: Blog
+  url: https://www.rain.xyz/blog
+- type: StatusPage
+  url: https://status.rain.xyz
+  name: Rain Status
+- type: Support
+  url: https://www.rain.xyz/contact-us
+- type: SignUp
+  url: https://use.rain.xyz
+- type: TermsOfService
+  url: https://www.rain.xyz/legal-center/legal
+- type: PrivacyPolicy
+  url: https://www.rain.xyz/legal-center/legal
+- type: TrustCenter
+  url: https://trust.rain.xyz
+  name: Rain Trust Center
+- type: Compliance
+  url: https://trust.rain.xyz
+  name: PCI DSS + SOC 2
+- type: Conformance
+  url: conformance/rain-conformance.yml
+- type: Lifecycle
+  url: lifecycle/rain-lifecycle.yml
+- type: Webhooks
+  url: asyncapi/rain-webhooks.yml
+- type: Sandbox
+  url: sandbox/rain-sandbox.yml
+- type: LLMsTxt
+  url: llms/rain-llms.txt
+- type: WellKnown
+  url: well-known/rain-well-known.yml
+- type: MCPServer
+  url: mcp/rain-mcp.yml
+  name: Rain docs MCP
+x-enrichment:
+  date: '2026-07-20'
+  status: enriched
+  artifacts_added: 10
+  pass: local-v1

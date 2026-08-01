@@ -1,0 +1,19 @@
+generated: '2026-07-20'
+method: searched
+source: https://status.rain.xyz
+notes: >-
+  Rain runs a public cState status page monitoring the Website and API components
+  (US Central primary region), with RSS subscription. Versioning and formal
+  deprecation policy are not publicly documented (developer docs are gated behind
+  an access code), so no deprecation policy pointer is emitted and no deprecated
+  operations could be derived.
+status_page: https://status.rain.xyz
+status_page_provider: cState
+status_components:
+- Website
+- API
+subscribe:
+  rss: https://status.rain.xyz/index.xml
+versioning:
+  scheme: unknown
+  note: Not publicly documented; API docs gated.
