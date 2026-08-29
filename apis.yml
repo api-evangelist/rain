@@ -9,6 +9,17 @@ description: Rain is an enterprise stablecoin payments platform that lets compan
   compliance. Customers include Western Union, Nuvei, and ether.fi. Rain has raised over $338M, including
   a $250M Series C led by ICONIQ and a Series B led by Sapphire Ventures.
 url: https://raw.githubusercontent.com/api-evangelist/rain/refs/heads/main/apis.yml
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: unknown
